@@ -7,4 +7,5 @@ urlpatterns = [
     # path("verify/", views.VerifyEmailView.as_view(), name="verify-email"),
     # path("crul/", views.SpyfuyAPIView.as_view(), name="crul"),
     # path('read_url/', views.URLReaderAPIView.as_view(), name='read-url'),
+    path('google/', views.GoogleAuthAPIView.as_view(), name='google-auth')
 ]

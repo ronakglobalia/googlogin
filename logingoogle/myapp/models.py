@@ -9,7 +9,7 @@ class Customuser(AbstractUser):
     This class store the users data.
     """
 
-    username = None
+    username = models.CharField(max_length=222,unique=False)
     email = models.EmailField(_("email address"), unique=True)
     is_verify = models.BooleanField(default=False)
 
